@@ -77,8 +77,12 @@
     <Compile Include="Assets\Localisation and Translation\Scripts\Manager\LocalisationImage.cs" />
     <Compile Include="Assets\Localisation and Translation\Scripts\Manager\LocalisationManager.cs" />
     <Compile Include="Assets\Localisation and Translation\Scripts\Manager\Translation.cs" />
+    <Compile Include="Assets\Scripts\Historia.cs" />
     <Compile Include="Assets\Scripts\LeitorArquivos.cs" />
+    <Compile Include="Assets\Scripts\Quadro.cs" />
     <Compile Include="Assets\Scripts\Sinais.cs" />
+    <None Include="Assets\Resources\i18n\en.txt" />
+    <None Include="Assets\Resources\quadros.txt" />
     <None Include="Assets\Resources\sinais.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/dev/Pessoal/panico_na_estrada/PanicoNaEstrada/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

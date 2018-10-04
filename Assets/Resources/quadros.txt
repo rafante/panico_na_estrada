@@ -1,5 +1,19 @@
 !!!
-''inicial
-###Onde estou? Acho que bati nessa árvore quando me desviei daquele maluco na estrada.
->>inicio.1
+%%%
+**quadro1
+###Onde estou? Que escuridão?
+->Procurar na floresta|quadro2
+->Procurar no pântano|quadro3
+>>quadro.1
 @@@
+!!!
+**seguirCorredor
+###Estou procurando na floresta e não encontrei
+>>quadro.2
+@@@
+!!!
+**acenderFosforo
+###Estou procurando no pântano... Achei o cara!
+>>quadro.3
+@@@
+

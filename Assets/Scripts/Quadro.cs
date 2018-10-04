@@ -6,6 +6,7 @@ public class Quadro
 {
     private string chave = "";
     private string texto = "";
+    private bool inicio = false;
     private List<string> links = new List<string>();
     private List<string> traducoes = new List<string>();
     private Dictionary<string,string> variaveis = new Dictionary<string, string>();
@@ -13,6 +14,26 @@ public class Quadro
 
     public Quadro(){
 
+    }
+
+    public bool eOInicio(){
+        return inicio;
+    }
+
+    public string obterChave(){
+        return chave;
+    }
+
+    public List<string> obterLinks(){
+        return links;
+    }
+
+    public Dictionary<string,string> obterCondicoes(){
+        return condicoes;
+    }
+
+    public void marcarInicio(){
+        this.inicio = true;
     }
 
     public void insereChave(string linha){

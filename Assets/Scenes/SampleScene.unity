@@ -1139,6 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arquivoSinais: sinais
+  arquivoQuadros: quadros
 --- !u!4 &1862679757
 Transform:
   m_ObjectHideFlags: 0
