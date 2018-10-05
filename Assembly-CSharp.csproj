@@ -79,6 +79,7 @@
     <Compile Include="Assets\Localisation and Translation\Scripts\Manager\Translation.cs" />
     <Compile Include="Assets\Scripts\Historia.cs" />
     <Compile Include="Assets\Scripts\LeitorArquivos.cs" />
+    <Compile Include="Assets\Scripts\LinkQuadro.cs" />
     <Compile Include="Assets\Scripts\Quadro.cs" />
     <Compile Include="Assets\Scripts\Sinais.cs" />
     <None Include="Assets\Resources\i18n\en.txt" />
