@@ -73,6 +73,8 @@ public class Historia : MonoBehaviour
         {
             GameObject botao = Instantiate(botaoLinkPrefab);
             botao.GetComponentInChildren<Text>().text = link.Value;
+            if(botao.GetComponentInChildren<Text>().text == "")
+                botao.GetComponentInChildren<Text>().text = "Continuar";
             botao.GetComponent<LinkQuadro>().textoLink = link.Value;
             botao.GetComponent<LinkQuadro>().chaveLink = link.Key;
             botao.transform.SetParent(botoesContainer);

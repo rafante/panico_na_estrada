@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Quadro.cs" />
     <Compile Include="Assets\Scripts\Sinais.cs" />
     <None Include="Assets\Resources\i18n\en.txt" />
+    <None Include="Assets\Resources\quadros1.txt" />
     <None Include="Assets\Resources\quadros.txt" />
     <None Include="Assets\Resources\sinais.txt" />
     <Reference Include="UnityEditor.StandardEvents">

@@ -1,0 +1,54 @@
+!!!
+%%%
+**quadro
+###Acordei agora, bati o carro na árvore desviando de uma maluco na estrada
+###Minha mulher e minha filha sumiram
+-> >|quadro1
+@@@
+!!!
+**quadro1
+###Quem era aquele doido no meio da estrada?
+###Quanto sangue! Pra onde será que elas foram?
+###Preciso procurar por elas
+->Procurar na floresta|quadro2
+->Procurar pela estrada|quadro2.1
+@@@
+!!!
+**quadro2
+###Estou há 1 hora andando nessa estrada no meio da floresta, escuro com uma
+###lanterna fraca chovendo e sem nem sequer saber se elas vieram por aqui
+-> >|quadro3
+@@@
+!!!
+**quadro2.1
+###Não sei se foi uma boa ideia ter vindo pela floresta. A mata aqui é fechada
+###eu estou todo espetado e não parece ter nenhum sinal delas por aqui.
+###Acho melhor voltar e procurar pela estrada, é impossível que tenham vindo
+###por aqui
+->Voltar e ir pela estrada|quadro3
+@@@
+!!!
+**quadro3
+###Pior é que durante todo esse tempo não passou uma viva alma até aqui.
+###Que estrada deserta. Meu Deus o que pode ter acontecido a elas?
+-> >|quadro4
+@@@
+!!!
+**quadro4
+###O que é aquilo? Um posto abandonado. Tem uma loja de conveniência e uma 
+###caminhonete azul parada na porta. Ela está com o farol ligado. Será que tem 
+###alguém ali?
+-> >|quadro5
+@@@
+!!!
+**quadro5
+###Eu não sei se me aproximo. Vou me aproximar...
+###Querida! Você está aí
+###*Mulher amarrada e amordaçada tenta avisar algo*
+-> >|quadro6
+@@@
+!!!
+**quadro6
+###Alguém te acerta a cabeça por trás e você morre!
+###Fim de jogo
+@@@
