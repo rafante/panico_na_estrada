@@ -61,11 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Jogo\Scripts\GameManager.cs" />
     <Compile Include="Assets\Jogo\Scripts\Historia.cs" />
     <Compile Include="Assets\Jogo\Scripts\LeitorArquivos.cs" />
     <Compile Include="Assets\Jogo\Scripts\LinkQuadro.cs" />
     <Compile Include="Assets\Jogo\Scripts\Quadro.cs" />
     <Compile Include="Assets\Jogo\Scripts\Sinais.cs" />
+    <None Include="Assets\FuncaoTwine\funcao_marota.txt" />
     <None Include="Assets\Resources\i18n\en.txt" />
     <None Include="Assets\Resources\quadros1.txt" />
     <None Include="Assets\Resources\quadros.txt" />
