@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Jogo/cenas/telaInicial.unity
     guid: 9dda11fc3e8b8e247991c6fb823aec8a
   - enabled: 1
+    path: Assets/Jogo/cenas/Config.unity
+    guid: 26e1ce62e6e4f2742bd39555c35bd605
+  - enabled: 1
     path: Assets/Jogo/cenas/cena_principal.unity
     guid: f5039475210c160478086a45d4f9ec6a
   m_configObjects: {}
