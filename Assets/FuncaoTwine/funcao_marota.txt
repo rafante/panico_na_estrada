@@ -1,0 +1,32 @@
+var funcao = function(){
+	var passagens = document.getElementsByTagName('tw-passagedata')
+	var str = "";
+	var inicio = true;
+	for(var i = 0; i < passagens.length; i++){
+		str += "!!!\n";
+		if(inicio){
+			str += "%%%\n";
+			inicio = false;
+		}
+		str += "***" + passagens[i].getAttributeNode('name').value + "\n";
+		var linhas = passagens[i].innerHTML.split('\n');
+		linhas.forEach(function(linha){
+			if(!linha.startsWith("[[")){
+				str += "###";
+				str += linha + "\n";
+			}else{
+				var linhaEdit = linha.replace("[[","").replace("]]","|");
+			    var split = linhaEdit.split("|");
+				
+				str += "->" + split[1] + "|" + split[0] + "\n";
+			}
+		});
+		str += "@@@\n";
+	}
+	var link = document.createElement('a');
+	link.download = 'quadros.txt';
+	var blob = new Blob([str], {type: 'text/plain'});
+	link.href = window.URL.createObjectURL(blob);
+	link.click();
+	console.log(str);
+}

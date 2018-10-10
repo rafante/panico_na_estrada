@@ -10,8 +10,8 @@
 ###Quem era aquele doido no meio da estrada?
 ###Quanto sangue! Pra onde será que elas foram?
 ###Preciso procurar por elas
-->Procurar na floresta|quadro2
-->Seguir pela estrada|quadro2.1
+->Seguir pela estrada|quadro2
+->Procurar na floresta|quadro2.1
 @@@
 !!!
 ***quadro2
@@ -46,16 +46,15 @@
 ###Um homem sai de dentro da despensa e aparece atrás do balcão e pergunta:
 ###
 ###Em que posso ajudar?
-->Bati o carro na estrada. Preciso de ajuda, minha esposa sumiu|quadro7
+->Bati o carro na estrada. Preciso de ajuda.|quadro7
 ->Esse posto parece abandonado, você trabalha aqui?|quadro7.1
 @@@
 !!!
 ***quadro7
-###Homem da loja:
-###Tenho certeza que sua esposa e sua filha estão bem. Provavelmente tentaram te acordar e como você não reagia, tentaram procurar ajuda.
+###_ Nossa! Foi muito longe daqui?
 ###
-->Pode me me levar na sua caminhonete pra procurarmos? Eu posso pagar.|quadro8.1
-->Eu não disse que estava com a minha filha...|quadro8
+###Sim eu andei cerca de uma hora na chuva até chegar aqui. Um maluco apareceu na minha frente de repente no meio da estrada chovendo forte, fui me desviar dele e bati o carro numa árvore
+->|quadro8
 @@@
 !!!
 ***quadro7.1
@@ -63,9 +62,23 @@
 @@@
 !!!
 ***quadro8
-###Clique duas vezes nessa passagem para editá-la.
+###Minha esposa e minha filha estavam comigo
+###
+###_ Estavam?
+###
+###Sim! Eu não as encontro. No momento da batida eu desmaiei e acho que fiquei inconsciente por um tempo, quando recobrei a consciência elas tinham sumido.
+->Posso usar seu telefone?|quadro9
+->Viu mais alguém passar por aqui hoje?|quadro10
 @@@
 !!!
 ***quadro8.1
+###Clique duas vezes nessa passagem para editá-la.
+@@@
+!!!
+***quadro9
+###_ Sinto muito, mas aqui não pega nenhuma operadora e meu telefone fixo ainda não foi instalado
+@@@
+!!!
+***quadro10
 ###Clique duas vezes nessa passagem para editá-la.
 @@@
