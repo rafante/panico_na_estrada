@@ -1,8 +1,9 @@
 Android
 PlayerPath?
-C:/dev/gitTest/apk/Pânico na Estrada.apk
+C:/desenvolvendo/panico_na_estrada/Panico na Estrada.apk
 SceneListBegin?
 Assets/Jogo/cenas/telaInicial.unity
+Assets/Jogo/cenas/Config.unity
 Assets/Jogo/cenas/cena_principal.unity
 SceneListEnd?
 4b8824a77c228f67086c130f919a5619 Assembly-CSharp.dll:.LeitorArquivos
@@ -116,6 +117,7 @@ d75dc834c5dec688db75a55a1724c90f UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 98d69a140ec0084cde3b6a5e09aea295 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+0db84669c7e135d679c92e78e0576103 Assembly-CSharp.dll:.Data
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 486cd95c82d8305219c352c06b776e1f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 0f27c39183b9eb95eba0a228bea28273 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -147,4 +149,5 @@ e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSyste
 98d69a140ec0084cde3b6a5e09aea295 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.GameManager
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Salvar
+161e27a4fb4ad4cc1c476c2f7ac5bb8c Assembly-CSharp.dll:.GameManager

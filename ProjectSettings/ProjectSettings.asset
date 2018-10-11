@@ -245,8 +245,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/dev/gitTest/assinatura/chave.keystore
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/desenvolvendo/panico_na_estrada/assinatura/chave.keystore
+  AndroidKeyaliasName: play lines
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
