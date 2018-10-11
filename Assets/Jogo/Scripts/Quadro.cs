@@ -6,6 +6,7 @@ public class Quadro
 {
     private string chave = "";
     private string texto = "";
+    private string imagem = "";
     private bool inicio = false;
     private Dictionary<string, string> links = new Dictionary<string, string>();
     private List<string> traducoes = new List<string>();
@@ -14,7 +15,7 @@ public class Quadro
 
     public Quadro()
     {
-
+        
     }
 
     public bool eOInicio()
@@ -30,6 +31,10 @@ public class Quadro
     public Dictionary<string, string> obterLinks()
     {
         return links;
+    }
+
+    public string obterImagem(){
+        return imagem;
     }
 
     public Dictionary<string, string> obterCondicoes()
@@ -60,6 +65,10 @@ public class Quadro
     public void adicionarTexto(string linha)
     {
         texto += linha.Replace(Sinais.chaves["TEXTO"], "");
+    }
+
+    public void setarImagem(string linha){
+        imagem = linha.Replace(Sinais.chaves["IMAGEM"], "");
     }
 
     public void adicionarLink(string linha)

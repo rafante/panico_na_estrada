@@ -12,6 +12,7 @@ public class Historia : MonoBehaviour
     public List<Quadro> quadros;
     private LeitorArquivos leitor;
     public Dictionary<string, string> variaveis;
+    public Image fundo;
 
     public Quadro atual;
     public static Historia instancia;
@@ -25,6 +26,16 @@ public class Historia : MonoBehaviour
     void Start()
     {
         inicializar();
+    }
+
+    public void salvarProgresso(){
+        PlayerPrefs.SetString("quadro_atual", atual.obterChave());
+        PlayerPrefs.Save();
+    }
+
+    public void carregarProgresso(){
+        string chaveDoQuadroAtual = PlayerPrefs.GetString("quadro_atual");
+        chamarQuadro(chaveDoQuadroAtual);
     }
 
     public void inicializar()
@@ -69,11 +80,16 @@ public class Historia : MonoBehaviour
         {
             DestroyImmediate(botao.gameObject);
         }
+        if (atual.obterImagem() != "")
+        {
+            mostrarImagem();
+        }
+        mostrarImagem();
         foreach (var link in atual.obterLinks())
         {
             GameObject botao = Instantiate(botaoLinkPrefab);
             botao.GetComponentInChildren<Text>().text = link.Value;
-            if(botao.GetComponentInChildren<Text>().text == "")
+            if (botao.GetComponentInChildren<Text>().text == "")
                 botao.GetComponentInChildren<Text>().text = "Continuar";
             botao.GetComponent<LinkQuadro>().textoLink = link.Value;
             botao.GetComponent<LinkQuadro>().chaveLink = link.Key;
@@ -81,6 +97,14 @@ public class Historia : MonoBehaviour
             botao.transform.localScale = Vector3.one;
             botao.transform.position = Vector3.zero;
         }
+    }
+
+    public void mostrarImagem()
+    {
+        string imagem = atual.obterImagem();
+        Sprite img = Resources.Load<Sprite>("Imagens/" + imagem);
+        if (img != null)
+            fundo.sprite = img;
     }
 
     public List<Quadro> proximos()
@@ -102,7 +126,7 @@ public class Historia : MonoBehaviour
                         break;
                     }
                 }
-                if(quadro == null)
+                if (quadro == null)
                     throw new Exception("Não encontrado quadro com link: " + link.Key);
                 quadrosLinks.Add(quadro);
             }

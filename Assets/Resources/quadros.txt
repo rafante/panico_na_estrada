@@ -4,6 +4,7 @@
 ###Acordei agora, bati o carro na árvore desviando de uma maluco na estrada
 ###Minha mulher e minha filha sumiram
 ->|quadro1
+&&&floresta
 @@@
 !!!
 ***quadro1
@@ -26,6 +27,7 @@
 !!!
 ***quadro4
 ###O que é aquilo? Um posto abandonado. Tem uma loja de conveniência e uma caminhonete azul parada na porta. Ela está com o farol ligado. Será que tem alguém ali?
+&&&posto
 ->|quadro5
 @@@
 !!!
@@ -46,6 +48,7 @@
 ###Um homem sai de dentro da despensa e aparece atrás do balcão e pergunta:
 ###
 ###Em que posso ajudar?
+&&&floresta
 ->Bati o carro na estrada. Preciso de ajuda.|quadro7
 ->Esse posto parece abandonado, você trabalha aqui?|quadro7.1
 @@@

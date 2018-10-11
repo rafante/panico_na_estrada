@@ -78,6 +78,9 @@ public class LeitorArquivos : MonoBehaviour
             {
                 quadro.marcarInicio();
             }
+            else if(linhaEditar.Contains(Sinais.chaves["IMAGEM"])){
+                quadro.setarImagem(linhaEditar);
+            }
         }
         foreach (var q in quadros)
         {

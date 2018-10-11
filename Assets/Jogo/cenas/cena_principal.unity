@@ -760,6 +760,7 @@ MonoBehaviour:
   botaoLinkPrefab: {fileID: 1797226105145344, guid: 23fd15c67474248429ccbcf6a1c0dd4b,
     type: 2}
   botoesContainer: {fileID: 1179399071}
+  fundo: {fileID: 1381360909}
 --- !u!114 &719429830
 MonoBehaviour:
   m_ObjectHideFlags: 0

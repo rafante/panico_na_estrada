@@ -15,7 +15,8 @@ public class Sinais
         "LINK",
         "CONDICAO",
         "LINK_TEXTO",
-        "FIM_QUADRO"
+        "FIM_QUADRO",
+        "IMAGEM"
     };
 
     public static Dictionary<string, string> chaves = new Dictionary<string, string>(); //dicionário dos sinais
