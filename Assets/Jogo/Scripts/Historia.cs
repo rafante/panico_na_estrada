@@ -28,14 +28,10 @@ public class Historia : MonoBehaviour
         inicializar();
     }
 
-    public void salvarProgresso(){
-        PlayerPrefs.SetString("quadro_atual", atual.obterChave());
+    public void salvarProgresso()
+    {
+        PlayerPrefs.SetString("jogo_salvo", atual.obterChave());
         PlayerPrefs.Save();
-    }
-
-    public void carregarProgresso(){
-        string chaveDoQuadroAtual = PlayerPrefs.GetString("quadro_atual");
-        chamarQuadro(chaveDoQuadroAtual);
     }
 
     public void inicializar()
@@ -43,15 +39,31 @@ public class Historia : MonoBehaviour
         leitor = GetComponent<LeitorArquivos>();
         variaveis = new Dictionary<string, string>();
         leitor.inicializar();
+        //busca o primeiro quadro e coloca ele na propriedade "atual"
         quadros = leitor.quadrosCarregados;
-        foreach (var quadro in quadros)
+        string jogoSalvo = PlayerPrefs.GetString("jogo_salvo");
+        
+        if (jogoSalvo != "") // Se encontrou um jogo salvo, o atual passa a ser o salvo
         {
-            if (quadro.eOInicio())
-            {
-                atual = quadro;
-                break;
+            foreach(var quadro in quadros){ 
+                if(quadro.obterChave() == jogoSalvo){
+                    atual = quadro;
+                    break;
+                }
             }
         }
+        else  // Se não encontrou um jogo salvo, o atual passa a ser aquele que tem o sinal de inicio
+        {
+            foreach (var quadro in quadros)
+            {
+                if (quadro.eOInicio())
+                {
+                    atual = quadro;
+                    break;
+                }
+            }
+        }
+
         mostraQuadroAtual();
     }
 
