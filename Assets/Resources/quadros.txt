@@ -1,87 +1,225 @@
-!!!
-%%%
-***quadro
-###Acordei agora, bati o carro na árvore desviando de uma maluco na estrada
-###Minha mulher e minha filha sumiram
-->|quadro1
-&&&floresta
-@@@
-!!!
-***quadro1
-###Quem era aquele doido no meio da estrada?
-###Quanto sangue! Pra onde será que elas foram?
-###Preciso procurar por elas
-->Seguir pela estrada|quadro2
-->Procurar na floresta|quadro2.1
-@@@
-!!!
-***quadro2
-###Estou há 1 hora andando nessa estrada no meio da floresta, escuro com uma lanterna fraca chovendo e sem nem sequer saber se elas vieram por aqui
-->|quadro3
-@@@
-!!!
-***quadro3
-###Pior é que durante todo esse tempo não passou uma viva alma até aqui. Que estrada deserta. Meu Deus o que pode ter acontecido a elas?
-->|quadro4
-@@@
-!!!
-***quadro4
-###O que é aquilo? Um posto abandonado. Tem uma loja de conveniência e uma caminhonete azul parada na porta. Ela está com o farol ligado. Será que tem alguém ali?
-&&&posto
-->|quadro5
-@@@
-!!!
-***quadro5
-###O motor da caminhonete ainda está ligado e os faróis acesos. Você entra
-###na loja e escuta alguém mexendo em algo numa dispensa interior.
-->Oi! Tem alguém aí?|quadro6
-@@@
-!!!
-***quadro2.1
-###Não sei se foi uma boa ideia ter vindo pela floresta. A mata aqui é fechada eu estou todo espetado e não parece ter nenhum sinal delas por aqui.
-###
-###Acho melhor voltar e procurar pela estrada, é impossível que tenham vindo por aqui
-->Voltar para a estrada|quadro2
-@@@
-!!!
-***quadro6
-###Um homem sai de dentro da despensa e aparece atrás do balcão e pergunta:
-###
-###Em que posso ajudar?
-&&&floresta
-->Bati o carro na estrada. Preciso de ajuda.|quadro7
-->Esse posto parece abandonado, você trabalha aqui?|quadro7.1
-@@@
-!!!
-***quadro7
-###_ Nossa! Foi muito longe daqui?
-###
-###Sim eu andei cerca de uma hora na chuva até chegar aqui. Um maluco apareceu na minha frente de repente no meio da estrada chovendo forte, fui me desviar dele e bati o carro numa árvore
-->|quadro8
-@@@
-!!!
-***quadro7.1
-###Clique duas vezes nessa passagem para editá-la.
-@@@
-!!!
-***quadro8
-###Minha esposa e minha filha estavam comigo
-###
-###_ Estavam?
-###
-###Sim! Eu não as encontro. No momento da batida eu desmaiei e acho que fiquei inconsciente por um tempo, quando recobrei a consciência elas tinham sumido.
-->Posso usar seu telefone?|quadro9
-->Viu mais alguém passar por aqui hoje?|quadro10
-@@@
-!!!
-***quadro8.1
-###Clique duas vezes nessa passagem para editá-la.
-@@@
-!!!
-***quadro9
-###_ Sinto muito, mas aqui não pega nenhuma operadora e meu telefone fixo ainda não foi instalado
-@@@
-!!!
-***quadro10
-###Clique duas vezes nessa passagem para editá-la.
-@@@
+->inicio_quadro|
+->inicio_historia|
+->chave|inicio
+->texto|Meu Deus, não acredito que ela morreu...
+->texto|
+->texto|E eu aqui tendo que dirigir em silêncio fingindo que não aconteceu nada pra que elas não percebam...
+->texto|
+->bgm|somChuvaCarroDirigindo
+->texto|
+->link||q1
+->fim_quadro|
+->inicio_quadro|
+->chave|q1
+->texto|Minha filha está estranha comigo desde que eu voltei com a comida. Será que ela viu alguma coisa?
+->texto|
+->texto|Só fica no celular. Com quem será que ela está teclando?
+->texto|
+->link||q2
+->fim_quadro|
+->inicio_quadro|
+->chave|q2
+->texto|Dane:
+->texto|—Amor, dirige devagar, tá muito escuro e essa chuva só tá pioriando.
+->texto|
+->link||q3
+->fim_quadro|
+->inicio_quadro|
+->chave|q3
+->texto|
+->audio|trovao
+->texto|
+->texto|Dane:
+->texto|—Você me ouviu?
+->texto|
+->link||q4
+->fim_quadro|
+->inicio_quadro|
+->chave|q4
+->texto|—Ah desculpa amor, o que você disse?
+->texto|
+->texto|Dane:
+->texto|—Você está distraído. Tô dizendo pra você ir devagar.
+->texto|
+->link||q5
+->fim_quadro|
+->inicio_quadro|
+->chave|q5
+->texto|—Ah! Devagar, certo. Eh... eu me distraí porque está chovendo muito e a visibilidade está horrível.
+->texto|
+->texto|
+->link||q6
+->fim_quadro|
+->inicio_quadro|
+->chave|q6
+->texto|Nossa, eu tenho que tomar cuidado ou ela pode perceber a minha preocupação. 
+->texto|
+->link||q7.0
+->fim_quadro|
+->inicio_quadro|
+->chave|q7
+->texto|—Karen, você foi na praia antes da gente sair?
+->texto|
+->link||q8
+->fim_quadro|
+->inicio_quadro|
+->chave|q8
+->texto|...
+->texto|
+->link||q9
+->texto|
+->fim_quadro|
+->inicio_quadro|
+->chave|q9
+->texto|Dane:
+->texto|—O que foi filha? Seu pai te fez uma pergunta.
+->texto|
+->link||q10
+->texto|
+->fim_quadro|
+->inicio_quadro|
+->chave|q12
+->texto|Dane:
+->texto|Vai devagar, tem alguma coisa ali na frente...
+->texto|
+->texto|Ron!!!
+->texto|
+->link||q14
+->fim_quadro|
+->inicio_quadro|
+->chave|q10
+->texto|Karen:
+->texto|—Nada não mãe. 
+->texto|
+->link||q11
+->texto|
+->texto|
+->fim_quadro|
+->inicio_quadro|
+->chave|q11
+->texto|Caramba, ela tá realmente estranha. Acho que ela deve ter visto alguma coisa...
+->texto|
+->link||q12
+->fim_quadro|
+->inicio_quadro|
+->chave|q14
+->audio|batida_carro
+->texto|
+->texto|...
+->texto|
+->link||q15
+->fim_quadro|
+->inicio_quadro|
+->chave|q7.1
+->texto|Tô ficando preocupado. Preciso sondar a Karen
+->texto|
+->link||q7
+->fim_quadro|
+->inicio_quadro|
+->chave|q15
+->imagem|panico_na_estrada
+->texto|
+->link||q16
+->fim_quadro|
+->inicio_quadro|
+->chave|q16
+->texto|Onde estou?
+->texto|
+->texto|Acho que bati nessa árvore quando desviei daquele maluco no meio da pista.
+->texto|
+->link||q17
+->fim_quadro|
+->inicio_quadro|
+->chave|q17
+->texto|Tô meio zonzo.
+->texto|
+->texto|Cadê a Dane e a Karen?
+->texto|
+->texto|_ Dane!!! Karen!!!
+->texto|
+->link||q18
+->fim_quadro|
+->inicio_quadro|
+->chave|q18
+->texto|Quanto sangue!
+->texto|Pra onde será que elas foram?
+->texto|
+->texto|Acho que eu tenho uma lanterna no porta-malas...
+->texto|
+->link|Procurar na floresta|q19
+->link|Ir pela estrada|q20
+->fim_quadro|
+->inicio_quadro|
+->chave|q19
+->texto|Essa floresta é muito densa. É impossível que tenham vindo por aqui.
+->texto|
+->texto|Acho melhor eu voltar pra estrada. Pode ser que passe alguém.
+->texto|
+->link||q20
+->fim_quadro|
+->inicio_quadro|
+->chave|q7.0
+->texto|O que eu faço? Eu preciso tirar isso da cabeça agora. Quando chegarmos em casa eu penso o que fazer com a Beth.
+->texto|
+->link| |q7.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q20
+->texto|Nossa...
+->texto|
+->texto|Estou há quase 1 hora andando e até agora nem uma viva alma.
+->texto|
+->texto|Pior que o meu celular tá todo molhado... Não funciona.
+->texto|
+->link||q21
+->fim_quadro|
+->inicio_quadro|
+->chave|q21
+->texto|Será que elas vieram nessa direção mesmo?
+->texto|
+->texto|A pilha da minha lanterna está quase acabando e esse lugar me dá arrepio.
+->texto|
+->link||q22
+->fim_quadro|
+->inicio_quadro|
+->chave|q22
+->texto|O que é aquilo? Parece um posto com uma lanchonete.
+->texto|
+->texto|Talvez tenha alguém lá.
+->texto|
+->link||q23
+->fim_quadro|
+->inicio_quadro|
+->chave|q23
+->texto|Estranho. Parece abandonado, mas tem essa caminhonete azul parada na entrada...
+->texto|
+->texto|Vou até lá pra ver se tem alguém
+->texto|
+->link||q24
+->fim_quadro|
+->inicio_quadro|
+->chave|q24
+->texto|Esse lugar parece abandonado, mas o motor da caminhonete ainda está ligado e tem uma luz acesa dentro da lanchonete.
+->texto|
+->link||q25
+->texto|
+->fim_quadro|
+->inicio_quadro|
+->chave|q25
+->texto|_ Olá!! Tem alguém aí?
+->texto|
+->link||q26
+->fim_quadro|
+->inicio_quadro|
+->chave|q26
+->|portaAbrindo
+->texto|
+->texto|_ Estou entrando!
+->texto|
+->link||q27
+->fim_quadro|
+->inicio_quadro|
+->chave|q27
+->texto|Voz de dentro da despensa:
+->texto|_ Só um momento! Estou saindo.
+->fim_quadro|

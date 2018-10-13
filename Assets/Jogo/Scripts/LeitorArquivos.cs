@@ -24,6 +24,8 @@ public class LeitorArquivos : MonoBehaviour
         carregarQuadros();
     }
 
+    
+
     public void carregarQuadros()
     {
         TextAsset asset = Resources.Load<TextAsset>(arquivoQuadros);
@@ -80,6 +82,13 @@ public class LeitorArquivos : MonoBehaviour
             }
             else if(linhaEditar.Contains(Sinais.chaves["IMAGEM"])){
                 quadro.setarImagem(linhaEditar);
+            
+            }else if(linhaEditar.Contains(Sinais.chaves["AUDIO"])){
+                quadro.setarAudio(linhaEditar);
+            
+            }else if(linhaEditar.Contains(Sinais.chaves["BGM"])){
+                quadro.setarBgm(linhaEditar);
+            
             }
         }
         foreach (var q in quadros)

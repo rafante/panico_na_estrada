@@ -7,6 +7,8 @@ public class Quadro
     private string chave = "";
     private string texto = "";
     private string imagem = "";
+    private string audio = "";
+    private string bgm = "";
     private bool inicio = false;
     private Dictionary<string, string> links = new Dictionary<string, string>();
     private List<string> traducoes = new List<string>();
@@ -37,6 +39,14 @@ public class Quadro
         return imagem;
     }
 
+    public string obterAudio(){
+        return audio;
+    }
+
+    public string obterBgm(){
+        return bgm;
+    }
+
     public Dictionary<string, string> obterCondicoes()
     {
         return condicoes;
@@ -64,12 +74,23 @@ public class Quadro
 
     public void adicionarTexto(string linha)
     {
-        texto += linha.Replace(Sinais.chaves["TEXTO"], "");
+        texto += "\n" + linha.Replace(Sinais.chaves["TEXTO"], "");
     }
 
     public void setarImagem(string linha){
         imagem = linha.Replace(Sinais.chaves["IMAGEM"], "");
     }
+
+    public void setarAudio(string linha){
+        audio = linha.Replace(Sinais.chaves["AUDIO"], "");
+    }
+
+    public void setarBgm(string linha){
+        bgm = linha.Replace(Sinais.chaves["BGM"], "");
+    }
+
+
+    
 
     public void adicionarLink(string linha)
     {

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(LeitorArquivos))]
 public class Historia : MonoBehaviour
@@ -16,6 +17,9 @@ public class Historia : MonoBehaviour
 
     public Quadro atual;
     public static Historia instancia;
+    public AudioSource som;
+    public AudioSource BGM;
+
 
     void Awake()
     {
@@ -28,10 +32,9 @@ public class Historia : MonoBehaviour
         inicializar();
     }
 
-    public void salvarProgresso()
+    public void Salvar()
     {
         PlayerPrefs.SetString("jogo_salvo", atual.obterChave());
-        PlayerPrefs.Save();
     }
 
     public void inicializar()
@@ -42,11 +45,14 @@ public class Historia : MonoBehaviour
         //busca o primeiro quadro e coloca ele na propriedade "atual"
         quadros = leitor.quadrosCarregados;
         string jogoSalvo = PlayerPrefs.GetString("jogo_salvo");
-        
-        if (jogoSalvo != "") // Se encontrou um jogo salvo, o atual passa a ser o salvo
+        string bgmSalvo = PlayerPrefs.GetString("bgm");
+
+        if (jogoSalvo != "") // Se encontrou um jogo salvo, o atual passa a ser o jogo salvo
         {
-            foreach(var quadro in quadros){ 
-                if(quadro.obterChave() == jogoSalvo){
+            foreach (var quadro in quadros)
+            {
+                if (quadro.obterChave() == jogoSalvo)
+                {
                     atual = quadro;
                     break;
                 }
@@ -63,6 +69,33 @@ public class Historia : MonoBehaviour
                 }
             }
         }
+
+        if (bgmSalvo != "") // Se encontrou um jogo salvo, o atual passa a ser o jogo salvo
+        {
+            foreach (var quadro in quadros)
+            {
+                if (quadro.obterChave() == bgmSalvo)
+                {
+                    atual = quadro;
+                    break;
+                }
+            }
+        }
+        else  // Se não encontrou um jogo salvo, o atual passa a ser aquele que tem o sinal de inicio
+        {
+            foreach (var quadro in quadros)
+            {
+                if (quadro.eOInicio())
+                {
+                    atual = quadro;
+                    break;
+                }
+            }
+        }
+
+        /* if(bgmSalvo != ""){
+            tocaBgm(bgmSalvo);
+        }*/
 
         mostraQuadroAtual();
     }
@@ -96,7 +129,18 @@ public class Historia : MonoBehaviour
         {
             mostrarImagem();
         }
-        mostrarImagem();
+
+
+        if (atual.obterAudio() != "")
+        {
+            tocaSom();
+        }
+
+        if (atual.obterBgm() != "")
+        {
+            tocaBgm(atual.obterBgm());
+        }
+
         foreach (var link in atual.obterLinks())
         {
             GameObject botao = Instantiate(botaoLinkPrefab);
@@ -111,6 +155,28 @@ public class Historia : MonoBehaviour
         }
     }
 
+    public void tocaSom()
+    {
+        string audio = atual.obterAudio();
+        AudioClip clip = Resources.Load<AudioClip>("Sons/" + audio);
+        if (clip != null)
+        {
+            som.clip = clip;
+            som.Play();
+        }
+    }
+
+    public void tocaBgm(string somBgm)
+    {
+        AudioClip bgm = Resources.Load<AudioClip>("Sons/BGM/" + somBgm);
+        if (bgm != null)
+        {
+            BGM.clip = bgm;
+            BGM.Play();
+
+        }
+    }
+
     public void mostrarImagem()
     {
         string imagem = atual.obterImagem();
@@ -118,6 +184,7 @@ public class Historia : MonoBehaviour
         if (img != null)
             fundo.sprite = img;
     }
+
 
     public List<Quadro> proximos()
     {
