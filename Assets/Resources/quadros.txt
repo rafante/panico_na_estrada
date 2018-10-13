@@ -103,6 +103,7 @@
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q14
+->bgm|chuva
 ->audio|batida_carro
 ->texto|
 ->texto|...
