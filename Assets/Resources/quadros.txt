@@ -5,7 +5,7 @@
 ->texto|
 ->texto|E eu aqui tendo que dirigir em silêncio fingindo que não aconteceu nada pra que elas não percebam...
 ->texto|
-->bgm|somChuvaCarroDirigindo
+->texto|-&gt;bgm|somChuvaCarroDirigindo
 ->texto|
 ->link||q1
 ->fim_quadro|
@@ -20,32 +20,32 @@
 ->inicio_quadro|
 ->chave|q2
 ->texto|Dane:
-->texto|—Amor, dirige devagar, tá muito escuro e essa chuva só tá pioriando.
+->texto|_ Amor, dirige devagar, tá muito escuro e essa chuva só tá pioriando.
 ->texto|
 ->link||q3
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q3
 ->texto|
-->audio|trovao
+->texto|-&gt;som|trovao
 ->texto|
 ->texto|Dane:
-->texto|—Você me ouviu?
+->texto|_ Você me ouviu?
 ->texto|
 ->link||q4
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q4
-->texto|—Ah desculpa amor, o que você disse?
+->texto|_ Ah desculpa amor, o que você disse?
 ->texto|
 ->texto|Dane:
-->texto|—Você está distraído. Tô dizendo pra você ir devagar.
+->texto|_ Você está distraído. Tô dizendo pra você ir devagar.
 ->texto|
 ->link||q5
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q5
-->texto|—Ah! Devagar, certo. Eh... eu me distraí porque está chovendo muito e a visibilidade está horrível.
+->texto|_ Ah! Devagar, certo. Eh... eu me distraí porque está chovendo muito e a visibilidade está horrível.
 ->texto|
 ->texto|
 ->link||q6
@@ -58,7 +58,7 @@
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q7
-->texto|—Karen, você foi na praia antes da gente sair?
+->texto|_ Karen, você foi na praia antes da gente sair?
 ->texto|
 ->link||q8
 ->fim_quadro|
@@ -72,7 +72,7 @@
 ->inicio_quadro|
 ->chave|q9
 ->texto|Dane:
-->texto|—O que foi filha? Seu pai te fez uma pergunta.
+->texto|_ O que foi filha? Seu pai te fez uma pergunta.
 ->texto|
 ->link||q10
 ->texto|
@@ -89,7 +89,7 @@
 ->inicio_quadro|
 ->chave|q10
 ->texto|Karen:
-->texto|—Nada não mãe. 
+->texto|_ Nada não mãe. 
 ->texto|
 ->link||q11
 ->texto|
@@ -103,8 +103,7 @@
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q14
-->bgm|chuva
-->audio|batida_carro
+->texto|-&gt;som|batida_carro
 ->texto|
 ->texto|...
 ->texto|
@@ -118,7 +117,7 @@
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q15
-->imagem|panico_na_estrada
+->texto|-&gt;imagem|panico_na_estrada
 ->texto|
 ->link||q16
 ->fim_quadro|
@@ -202,7 +201,7 @@
 ->chave|q24
 ->texto|Esse lugar parece abandonado, mas o motor da caminhonete ainda está ligado e tem uma luz acesa dentro da lanchonete.
 ->texto|
-->link||q25
+->link||q24.1
 ->texto|
 ->fim_quadro|
 ->inicio_quadro|
@@ -213,7 +212,7 @@
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q26
-->|portaAbrindo
+->texto|-&gt;som|portaAbrindo
 ->texto|
 ->texto|_ Estou entrando!
 ->texto|
@@ -221,6 +220,414 @@
 ->fim_quadro|
 ->inicio_quadro|
 ->chave|q27
-->texto|Voz de dentro da despensa:
+->texto|Uma voz desconhecida:
 ->texto|_ Só um momento! Estou saindo.
+->texto|
+->link||q28
+->fim_quadro|
+->inicio_quadro|
+->chave|q24.1
+->texto|Eu tenho a sensação que já vi essa caminhonete antes, mas não consigo me lembrar direito...
+->texto|
+->link||q25
+->fim_quadro|
+->inicio_quadro|
+->chave|q28
+->texto|Desconhecido:
+->texto|_ Desculpe, eu estava na despensa arrumando as coisas para abrir a lanchonete pela manhã.
+->texto|
+->link||q29
+->fim_quadro|
+->inicio_quadro|
+->chave|q29
+->texto|_ Tudo bem. Eu estou precisando de ajuda. Sofri um acidente na estrada. Posso usar seu telefone?
+->texto|
+->link||q30
+->fim_quadro|
+->inicio_quadro|
+->chave|q30
+->texto|Desconhecido:
+->texto|— Desculpe, meu celular está sem sinal e ainda não instalaram o telefone fixo.
+->texto|
+->texto|Ele motra o celular com a sua tela desligada.
+->link||q31.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q31.1
+->texto|— Droga! Eu tô desesperado porque quando acordei no meu carro, minha mulher e minha filha tinham sumido e até agora sei onde estão
+->texto|
+->link||q32.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q32.1
+->texto|Estranho:
+->texto|— Eu entendo. Essa lanchonete quase não tá tendo movimento ultimamente, quase ninguém passa mais por aqui. Vou acabar fechando.
+->texto|
+->link|Tem algum outro posto por aqui?|33.1
+->fim_quadro|
+->inicio_quadro|
+->chave|33.1
+->texto|Estranho:
+->texto|— O próximo posto está a uns 15 km daqui. 
+->texto|
+->texto|— Droga! Eu não sei mais o que fazer, não sei o que houve com elas. Me desculpe, mas é que eu estou desesperado
+->texto|
+->link||q34.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q34.1
+->texto|Estranho:
+->texto|— Você está vindo de onde?
+->texto|
+->texto|-&gt;audio|trovao
+->link||q35.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q35.1
+->texto|— Desculpe, nem me apresentei. Meu nome é Ron. Minha família e eu estávamos voltando da praia. Alguém surgiu na pista bem na minha frente e ao desviar, eu bati numa árvore
+->texto|
+->link||q36.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q36.1
+->texto|Estranho:
+->texto|— O que alguém estaria fazendo no meio da pista num lugar como esse? A praia fica a uns 50 km daqui e o próximo destino é uma pequena cidade que fica a quase 100 km na direção oposta
+->texto|
+->link||q37.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q37.1
+->texto|— É justamente o que eu fico pensando desde que acordei, mas a minha cabeça está doendo por causa do acidente e não consigo me lembrar direito de tudo.
+->texto|
+->link||q38.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q38.1
+->texto|Estranho:
+->texto|— Se quiser colocar o seu chip no meu celular, pra ver se pega sinal da sua operadora...
+->texto|
+->link||q39.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q39.1
+->texto|— Cara você vai me ajudar demais, muito obrigado.
+->texto|
+->texto|Estranho:
+->texto|— Tudo bem, eu não tenho nada preparado aqui ainda, mas se quiser comprar algum salgadinho fique a vontade.
+->texto|
+->texto|
+->link||q40.a
+->fim_quadro|
+->inicio_quadro|
+->chave|q40.a
+->texto|— É, vou querer sim, andei uma hora nessa chuva forte e estou morrendo de fome.
+->texto|
+->texto|Estranho:
+->texto|— Fique à vontade pra comer, depois você paga. Enquanto você coloca seu chip eu vou continuar arrumando a despensa, qualquer coisa você me chama
+->texto|
+->texto|— Valeu!
+->texto|
+->link||q41.a
+->fim_quadro|
+->inicio_quadro|
+->chave|q41.a
+->texto|Nossa, ainda bem que vim nessa direção. Se eu conseguir pegar sinal com meu celular posso tentar pedir ajuda.
+->texto|
+->link||q42.a
+->fim_quadro|
+->inicio_quadro|
+->chave|q42.a
+->texto|Pronto. Agora é ligar e torcer pra pegar sinal
+->texto|
+->link||q43.a
+->fim_quadro|
+->inicio_quadro|
+->chave|q43.a
+->texto|Beleza! Parece que funcionou. Chegou uma mensagem aqui...
+->texto|
+->texto|-&gt;audio|celularVibrando
+->texto|
+->link||q44.a
+->fim_quadro|
+->inicio_quadro|
+->chave|q44.a
+->texto|"Amor, eu espero que você esteja bem. Nós acordamos no carro e você parecia morto. Andamos na direção da praia por algum tempo e um caminhoneiro nos deu carona, mas paramos no local do acidente e você não estava mais lá. Meu celular tá quase descarregando. Estou tentando ver se alguém nos ajuda."
+->texto|
+->link||q45
+->fim_quadro|
+->inicio_quadro|
+->chave|q45
+->texto|Droga Dane, devia ter gasto a sua bateria ligando pra polícia e não me mandando mensagem. Bom, pelo menos já sei que elas estão bem.
+->texto|
+->link||q46
+->fim_quadro|
+->inicio_quadro|
+->chave|q46
+->texto|Estranho:
+->texto|— E aí conseguiu alguma coisa?
+->texto|-&gt;audio|portaAbrindo
+->texto|
+->texto|— Consegui sim! Muito obrigado. Minha mulher me mandou uma mensagem dizendo que estão bem e que está tentando conseguir ajuda. Mas pela hora e com essa chuva, acho que vou ter que ficar aqui até amanhecer.
+->texto|
+->link||q47
+->texto|
+->fim_quadro|
+->inicio_quadro|
+->chave|q47
+->texto|— A propósito, acho que você não me disse seu nome ainda
+->texto|
+->texto|Estranho:
+->texto|— Sim, é verdade. Desculpe. Meu nome é Renato.
+->texto|
+->link|Esse lugar é seu ou você é funcionário?|q48.1
+->link|Acho que você esqueceu sua caminhonete ligada|q48.2
+->fim_quadro|
+->inicio_quadro|
+->chave|q48.1
+->texto|Renato:
+->texto|— Sou funcionário, mas o dono é meu tio. O movimento anda fraco, acho que ele vai acabar tendo que fechar.
+->texto|
+->link||q49.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q48.2
+->texto|Renato:
+->texto|— Caramba, eu nem percebi. Vou lá desligar. Espere aqui.
+->texto|
+->link||q49.2
+->fim_quadro|
+->inicio_quadro|
+->chave|q49.1
+->texto|— Vou te pagar já de uma vez. E aqui está o seu celular, muito obrigado.
+->texto|
+->texto|Renato:
+->texto|— Sem problemas. Vocês resolveram ir na praia fora de temporada, algum motivo especial?
+->texto|
+->link||q50.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q50.1
+->texto|— Erh... Bom, eu recebi uma gratificação no trabalho e resolvi trazer a família pra um passeio
+->texto|
+->link||q51
+->fim_quadro|
+->inicio_quadro|
+->chave|q51
+->texto|Renato:
+->texto|— Passaram muito tempo lá? Desculpe se estou me intrometendo, mas é que como estamos presos aqui nessa chuva, acho que só dá pra conversarmos.
+->texto|
+->link||q52
+->fim_quadro|
+->inicio_quadro|
+->chave|q52
+->texto|— Tudo bem, eu também acho. Nós ficamos lá durante do fim de semana numa casa de praia que eu aluguei. Chegamos lá no sábado de manhã, e ficamos o dia todo, dormimos lá e saímos de lá às 22:00
+->texto|
+->link||q53
+->fim_quadro|
+->inicio_quadro|
+->chave|q53
+->texto|Renato:
+->texto|— Esse fim de semana tava bem frio, não seria melhor ter feito outro programa?
+->texto|
+->link||q54
+->fim_quadro|
+->inicio_quadro|
+->chave|q54
+->texto|— É, você tem razão, mas a minha filha queria muito ir à praia e como nós nunca conseguíamos, achei uma boa oportunidade pra levá-la.
+->texto|
+->texto|...
+->texto|
+->texto|— Se me desculpa eu vou sentar um pouco ali para descansar. Eu estou morto. Andei muito tempo na chuva
+->texto|
+->link||q55.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q55
+->texto|Na verdade isso me fez lembrar da Beth. Que droga! E agora? Será que alguém encontrou o corpo? Eu preciso falar com o Júlio, explicar a situação e ver se ele me ajuda
+->texto|
+->link||q56
+->fim_quadro|
+->inicio_quadro|
+->chave|q56
+->texto|Faz tanto tempo que ela virou amiga da Dane e agora depois de tanto tempo me faz uma coisa dessas
+->texto|
+->link||q57
+->fim_quadro|
+->inicio_quadro|
+->chave|q55.1
+->texto|Renato:
+->texto|— Sem problemas, eu vou continuar fazendo a contagem do estoque na despensa, mas fique à vontade.
+->texto|
+->link||q55
+->fim_quadro|
+->inicio_quadro|
+->chave|q57
+->texto|Minha cabeça tá doendo. Preciso relembrar de todos os passos pra conseguir pensar numa forma de sair disso tudo. Se a Dane descobrir, minha vida tá acabada. Como é que eu vou explicar?
+->texto|
+->link||q58
+->fim_quadro|
+->inicio_quadro|
+->chave|q58
+->texto|Eu posso ser preso!
+->texto|
+->texto|...
+->texto|
+->texto|Meu Deus, eu preciso pensar em alguma coisa...
+->texto|Bom, deixa eu recapitular:
+->texto|
+->link||q59
+->fim_quadro|
+->inicio_quadro|
+->chave|q59
+->texto|Primeiro eu comecei a receber mensagens anonimas de um número desconhecido. Era uma admiradora secreta. Droga! Achei que fosse a Rita ou a Maria. Quem diria que era a Beth. Achei que ela fosse a melhor amiga da Dane.
+->texto|
+->link||q60
+->fim_quadro|
+->inicio_quadro|
+->chave|q60
+->texto|Eu esperava isso da Rita. Aquela secretária safada. Vive dando em cima do Júlio e de vez em quando jogando charminho pra mim. Tava muito na cara que era ela. Não to conseguindo acreditar que foi a Beth.
+->texto|
+->link||q61
+->fim_quadro|
+->inicio_quadro|
+->chave|q61
+->texto|Bom, mas eu preciso me concentrar pra tentar encontrar os pontos que possam me incriminar.
+->texto|
+->link||q62
+->fim_quadro|
+->inicio_quadro|
+->chave|q62
+->texto|Que merda! Só vim parar nessa merda de lugar porque pensei que quem tava me mandando aquelas mensagens pudesse ser a Maria. Se fosse a Maria seria um grande problema porque a Rita é só uma secretária piranha, mas a Maria poderia entregar pra Dane que já tivemos um caso
+->texto|
+->link||q63
+->fim_quadro|
+->inicio_quadro|
+->chave|q63
+->texto|A Karen me preocupa muito. Ela estava muito estranha comigo no carro antes do acidente. Será que ela viu alguma coisa?
+->texto|Preciso recapitular cada passo próximo da morte da Beth pra tentar descobrir o que eu estou deixando passar.
+->texto|
+->link||q64
+->fim_quadro|
+->inicio_quadro|
+->chave|q64
+->texto|Era 21:00 e eu disse que ia comprar comida pra comermos antes de viajar. A Dane disse que ia arrumar as nossas coisas no carro e a Karen disse queria ver a pria de noite antes de irmos embora.
+->texto|
+->link||q65
+->fim_quadro|
+->inicio_quadro|
+->chave|q65
+->texto|Até aquele momento eu não me lembro dela ter tido qualquer atitude estranha.
+->texto|
+->link||q66
+->fim_quadro|
+->inicio_quadro|
+->chave|q66
+->texto|Eu usei a desculpa de ir comprar comida pra ir no local que a Beth marcou comigo por mensagens misteriosas.
+->texto|
+->texto|Será que enquanto eu estava com a Beth a Karen me viu de lá da praia?
+->texto|
+->link||q67
+->fim_quadro|
+->inicio_quadro|
+->chave|q67
+->texto|Mas isso não seria motivo pra ela ter ficado daquele jeito. Ela deveria na verdade ter me perguntado o que houve com a Beth.
+->texto|
+->texto|Acho que ela não viu a hora em que a Beth caiu. Se ela tivesse visto, ela teria perguntado.
+->texto|
+->link||q68
+->fim_quadro|
+->inicio_quadro|
+->chave|q68
+->texto|Será que ela viu a Beth tentando me agarrar e achou que eu estava traindo a Dane?
+->texto|
+->texto|Se for isso justificaria ela ter ficado estranha daquele jeito.
+->texto|
+->link||q69
+->fim_quadro|
+->inicio_quadro|
+->chave|q69
+->texto|Se for isso então ela não viu quando eu empurrei a Beth e o meu problema diminui, mas não muito. Se ela falar com a mãe eu vou ter que explicar tudo e vão saber o que houve com a Beth.
+->texto|
+->link||q70
+->fim_quadro|
+->inicio_quadro|
+->chave|q70
+->texto|Que merda Beth! Nós namoramos no colégio e depois nunca mais ficamos juntos. Será que você nunca aceitou nosso término?
+->texto|
+->link||q71
+->fim_quadro|
+->inicio_quadro|
+->chave|q71
+->texto|Tenho que me concentrar.
+->texto|Estou com tanto sono.
+->texto|
+->link||q72
+->fim_quadro|
+->inicio_quadro|
+->chave|q72
+->texto|Bom, recapitulando, no carro ela estava mandando mensagem pra alguém. Será que era pra alguma amiga? Será que era pra Dane?
+->texto|
+->link||q73
+->fim_quadro|
+->inicio_quadro|
+->chave|q73
+->texto|-&gt;audio|portaAbrindo
+->texto|
+->texto|Renato:
+->texto|— Não está conseguindo dormir?
+->texto|
+->link|É, eu acho que é essa dor de cabeça|q74.1
+->link|Estou preocupado com a minha mulher e minha filha|q74.2
+->fim_quadro|
+->inicio_quadro|
+->chave|q74.1
+->texto|Clique duas vezes nessa passagem para editá-la.
+->fim_quadro|
+->inicio_quadro|
+->chave|q74.2
+->texto|Clique duas vezes nessa passagem para editá-la.
+->fim_quadro|
+->inicio_quadro|
+->chave|q49.2
+->texto|...
+->texto|
+->texto|-&gt;audio|portaFechando
+->link|Esperar|q50.2
+->link|Olhar ao redor|q50.3
+->fim_quadro|
+->inicio_quadro|
+->chave|q50.2
+->texto|Como é que o cara esquece a caminhonete ligada esse tempo todo. Que estranho.
+->texto|
+->texto|Estou me lembrando de algo.
+->texto|
+->link||q51.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q50.3
+->texto|Clique duas vezes nessa passagem para editá-la.
+->fim_quadro|
+->inicio_quadro|
+->chave|q51.1
+->texto|Aquela caminhonete azul... O cara que estava parado no meio da estrada. Eu estou me lembrando aqui o cara tava no meio da pista e no acostamento tava uma caminhonete igual aquela.
+->texto|
+->link||q52.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q52.1
+->texto|...
+->texto|-&gt;audio|portaAbrindo
+->texto|
+->texto|— Renato?
+->texto|
+->link||q53.1
+->fim_quadro|
+->inicio_quadro|
+->chave|q53.1
+->texto|-&gt;audio|engatilhaAtiraDuasVezes
+->texto|-&gt;imagem|manchaSange
+->texto|
+->texto|Você morreu com 2 tiros na cabeça!
+->texto|
+->texto|GAME OVER
 ->fim_quadro|
