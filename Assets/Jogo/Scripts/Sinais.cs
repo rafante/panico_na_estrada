@@ -46,9 +46,9 @@ public class Sinais
                 chaves.Add(chaveValor[0], chaveValor[1]); // o que ficou na chaveValor[1] é o valor do sinal (o simbolo de fato)
             else
                 chaves[chaveValor[0]] = chaveValor[1];
-            Debug.Log("chave:" + chaveValor[0] + "|valor:" + chaveValor[1]); //printa os sinais lá no console pra conferir se deu certo
+            //Debug.Log("chave:" + chaveValor[0] + "|valor:" + chaveValor[1]); //printa os sinais lá no console pra conferir se deu certo
         }
-        Debug.Log("Fim");
+        //Debug.Log("Fim");
     }
 
 

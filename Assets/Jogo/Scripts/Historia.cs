@@ -14,6 +14,9 @@ public class Historia : MonoBehaviour
     private LeitorArquivos leitor;
     public Dictionary<string, string> variaveis;
     public Image fundo;
+    public GameObject btnProximo;
+    public GameObject grupoBotoes;
+    public GameObject objTexto;
 
     public Quadro atual;
     public static Historia instancia;
@@ -32,9 +35,15 @@ public class Historia : MonoBehaviour
         inicializar();
     }
 
-    public void Salvar()
+    public void Salvar(bool confirmado = false)
     {
-        PlayerPrefs.SetString("jogo_salvo", atual.obterChave());
+        if (confirmado)
+        {
+            PlayerPrefs.SetString("jogo_salvo", atual.obterChave());
+        }
+        else{
+            Propagandas.instancia.RequestRewardBasedVideo();
+        }
     }
 
     public void inicializar()
@@ -100,6 +109,16 @@ public class Historia : MonoBehaviour
         mostraQuadroAtual();
     }
 
+    public void proximoQuadro()
+    {
+        if (proximos().Count == 0)
+        {
+            SceneManager.LoadScene("telaInicial");
+        }
+        else
+            chamarQuadro(proximos()[0].obterChave());
+    }
+
     public void chamarQuadro(string quadroAChamar)
     {
         atual = null;
@@ -141,17 +160,40 @@ public class Historia : MonoBehaviour
             tocaBgm(atual.obterBgm());
         }
 
-        foreach (var link in atual.obterLinks())
+        if (atual.obterTexto() == "")
         {
-            GameObject botao = Instantiate(botaoLinkPrefab);
-            botao.GetComponentInChildren<Text>().text = link.Value;
-            if (botao.GetComponentInChildren<Text>().text == "")
-                botao.GetComponentInChildren<Text>().text = "Continuar";
-            botao.GetComponent<LinkQuadro>().textoLink = link.Value;
-            botao.GetComponent<LinkQuadro>().chaveLink = link.Key;
-            botao.transform.SetParent(botoesContainer);
-            botao.transform.localScale = Vector3.one;
-            botao.transform.position = Vector3.zero;
+            objTexto.SetActive(false);
+        }
+        else
+        {
+            objTexto.SetActive(true);
+        }
+
+        if (atual.obterLinks().Count == 1)
+        {
+            btnProximo.SetActive(true);
+            grupoBotoes.SetActive(false);
+        }
+        else if (atual.obterLinks().Count == 0)
+        {
+            SceneManager.LoadScene("telaInicial");
+        }
+        else
+        {
+            btnProximo.SetActive(false);
+            grupoBotoes.SetActive(true);
+            foreach (var link in atual.obterLinks())
+            {
+                GameObject botao = Instantiate(botaoLinkPrefab);
+                botao.GetComponentInChildren<Text>().text = link.Value;
+                if (botao.GetComponentInChildren<Text>().text == "")
+                    botao.GetComponentInChildren<Text>().text = "Continuar";
+                botao.GetComponent<LinkQuadro>().textoLink = link.Value;
+                botao.GetComponent<LinkQuadro>().chaveLink = link.Key;
+                botao.transform.SetParent(botoesContainer);
+                botao.transform.localScale = Vector3.one;
+                botao.transform.position = Vector3.zero;
+            }
         }
     }
 
@@ -198,7 +240,6 @@ public class Historia : MonoBehaviour
                 Quadro quadro = null;
                 foreach (Quadro q in quadros)
                 {
-                    Debug.Log("Comparando " + q.obterChave() + " com " + link.Key);
                     if (q.obterChave() == link.Key)
                     {
                         quadro = q;

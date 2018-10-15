@@ -91,10 +91,6 @@ public class LeitorArquivos : MonoBehaviour
             
             }
         }
-        foreach (var q in quadros)
-        {
-            Debug.Log(q.ToString());
-        }
 
         quadrosCarregados = quadros;
     }

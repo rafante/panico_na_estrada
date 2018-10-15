@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Jogo/cenas/telaInicial.unity
+- path: Assets/Jogo/cenas/cena_principal.unity
   isLoaded: 1
   isActive: 1

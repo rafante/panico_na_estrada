@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
 	public GameObject painelDecisao;
 	public GameObject panico;
 	public GameObject audios;
+	public GameObject botaoProximo;
+	public GameObject grupoBotoes;
 	bool somOff = false;
 
 	public void audioOnOff(){
@@ -20,11 +22,17 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void Pause(){
-
+		Debug.Log("pausou");
 		if(estaPausado){
+			botaoProximo.SetActive(true);
+			grupoBotoes.SetActive(true);
+			
 			painelPause.SetActive(false);
 			estaPausado =  false;
 		}else{
+			botaoProximo.SetActive(false);
+			grupoBotoes.SetActive(false);
+			
 			painelPause.SetActive(true);
 			estaPausado = true;
 		}
